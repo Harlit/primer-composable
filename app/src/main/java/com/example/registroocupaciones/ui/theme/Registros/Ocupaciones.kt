@@ -20,8 +20,8 @@ import androidx.compose.ui.unit.sp
 @SuppressLint("UnrememberedMutableState")
 @Composable
 fun Ocupaciones() {
-    val description = mutableStateOf("")
-    val salary = mutableStateOf("")
+    val Descripción = mutableStateOf("")
+    val Salario = mutableStateOf("")
 
     Column(modifier = Modifier) {
         Spacer(modifier = Modifier.padding(110.dp))
@@ -32,14 +32,14 @@ fun Ocupaciones() {
 
         Column(modifier = Modifier.fillMaxWidth()) {
             TextField(
-                value = description.value,
-                onValueChange = { description.value = it },
+                value = Descripción.value,
+                onValueChange = { Descripción.value = it },
                 label = { Text("Descripción") },
                 modifier = Modifier.fillMaxWidth()
             )
             TextField(
-                value = salary.value,
-                onValueChange = { salary.value = it },
+                value = Salario.value,
+                onValueChange = { Salario.value = it },
                 label = { Text("Salario") },
                 modifier = Modifier.fillMaxWidth()
             )
